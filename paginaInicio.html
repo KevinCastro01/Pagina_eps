@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/estilosPagInicio.css">
+    <link rel="shortcut icon" href="./img/descarga.jfif">
+    <title>EPS conTuSalud</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <img src="./img/descarga.jfif" alt="epicStore" id="logo">
+            <a class="navbar-brand" href="paginaInicio.html">EPS conTuSalud</a>
+            <a class="navbar-brand" href="afiliados.html">Afiliados</a>
+            <a class="navbar-brand" href="empleados.html">Empleados</a>
+            <a class="navbar-brand" href="independiente.html">Independientes</a>
+            <button type="button" class="btn btn-primary" id="liveToastBtn">Bienvenida</button>
+
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <img src="./img/descarga.jfif" style="width: 200px;" class="rounded me-2" alt="">
+                        <strong class="me-auto">Bienvenido a EPS</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Gracias por elegirnos :3.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Termina el navbar -->
+    <div class="container">
+        <div class="row mt-5 bg-primary" id="fila">
+            <div class="card" style="width: 18rem;">
+                <img src="./img/vacuna.jpg" class="card-img-top" alt="fifa">
+                <div class="card-body">
+                    <h5 class="card-title">Vacunación</h5>
+                    <p class="card-text">Conoce las novedades diarias sobre la vacunación contra el COVID-19.</p>
+                    <a href="https://epssura.com/vacunacion" class="btn btn-dark">Ver</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./img/quehacer.jpg" class="card-img-top" alt="destiny2">
+                <div class="card-body">
+                    <h5 class="card-title">¿Qué hacer si tienes sintomas de COVID-19?</h5>
+                    <p class="card-text">Queremos acompañarte con herramientas que te permitan autogestionarte, aún sin
+                        contar con una prueba diagnóstica.</p>
+                    <a href="https://autotriaje.epssura.com/covid" class="btn btn-dark">Ver</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./img/info.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Información general</h5>
+                    <p class="card-text">Resuelve tus inquietudes sobre el COVID-19. Encuentra contenidos relevantes
+                        para ti, tu familia y tu salud mental.</p>
+                    <a href="https://www.segurossura.com.co/covid-19/Paginas/default.aspx?utm_source=epssura&utm_medium=banner&utm_campaign=banner-informate-eps&utm_content=informate-eps"
+                        class="btn btn-dark">Ver</a>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mt-3">Información de los doctores</h3>
+        <div id="alineaBotones" class="mt-3 d-flex justify-content-evenly">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#doctor1">
+                Deiner Vega
+            </button>
+
+            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#doctor2">
+                Kevin Castro
+            </button>
+
+            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#doctor3">
+                Fabian Osorio
+            </button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="doctor1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deiner Vega</h5>
+                        <img src="./img/deiner.jpg" alt="">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Deiner Vega fue un médico estadounidense en el campo de la cirugía, conocido como el
+                        "padre de la ginecología". Su obra más famosa fue el desarrollo de una técnica quirúrgica para
+                        la reparación de la fístula vesicovaginal, una complicación grave del parto obstruido.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="doctor2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Kevin Castro</h5>
+                        <img src="./img/kevin.jpg" alt="">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Frederick Chapman Robbins. Estudió medicina en la Universidad Harvard. Inició sus trabajos en el
+                        Hospital Infantil de Boston, Posteriormente trabajó como director del departamento de pediatría
+                        y enfermedades infecciosas del City Hospital de Cleveland. Trabajó con John F.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="doctor3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Fabian osorio</h5>
+                        <img src="./img/fabian.jpg" alt="">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Pierre Fauchard (1678 – 22 de marzo de 1761) fue un destacado médico francés, a quien se lo
+                        reconoce como el "padre de la odontología moderna". Es muy conocido gracias a su libro, Le
+                        chirurgien dentiste, "El dentista cirujano" 1728,1​ donde describe la anatomía y funciones
+                        orales básicas, signos y síntomas de la patología bucal, métodos operativos para extraer dientes
+                        con caries y reparar dientes, enfermedades periodontales (piorrea), ortodoncia, reemplazo de
+                        dientes faltantes, y trasplante de dientes. Se dice que su libro fue el primero en brindar una
+                        descripción completa científica de la odontología. La obra de Fauchard fue continuada por otros
+                        que expandieron el conocimiento de la profesión a través de Europa.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <br>
+        <!-- Empieza el acordeon -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item ">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button bg-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="botones">
+                        Historia de la medicina
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>La historia de la medicina</strong> es la rama de la
+                        historia dedicada al estudio de los conocimientos y prácticas médicas a lo largo del tiempo.
+                        También es una parte de cultura "es en realidad la historia de los problemas médicos".
+
+                        Desde sus antiguos orígenes, el ser humano ha tratado de explicarse la realidad y los
+                        acontecimientos trascendentales que en ella tienen lugar como la vida, la muerte o la
+                        enfermedad. La medicina tuvo sus comienzos en la prehistoria, la cual también tiene su propio
+                        campo de estudio conocido como antropología médica. Se utilizaban plantas, minerales y partes de
+                        animales, en la mayoría de las veces estas sustancias eran utilizadas en rituales mágicos por
+                        chamanes, sacerdotes, magos, brujos, animistas, espiritualistas o adivinos.1​ Las primeras
+                        civilizaciones y culturas humanas basaron su práctica médica en dos pilares aparentemente
+                        opuestos: un empirismo primitivo y de carácter pragmático (aplicado fundamentalmente al uso de
+                        hierbas o remedios obtenidos de la naturaleza) y una medicina mágico-religiosa, que recurrió a
+                        los dioses para intentar comprender lo inexplicable.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed bg-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="botones">
+                        Primer doctor
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Si saltamos hasta Egipto, podríamos encontrar al fin al que podría ser “el primer médico de la
+                        historia”, por ser el primero sobre el que existe documentación escrita. Se trata de Imhotep (en
+                        torno al 3.000 y 2.850 a.C.), la figura egipcia equivalente a Asclepio en Grecia. Imhotep fue
+                        visir del rey Zoser, de la III dinastía, y tenía conocimientos de astrología y arquitectura. A
+                        él se debe, entre otras grandes obras, la construcción de la pirámide escalonada de Sakkara. Fue
+                        una figura muy popular y al morir su cuerpo fue llevado al Nilo en una ceremonia que inició su
+                        posterior glorificación y deificación. Siglos después Imhotep se convertiría en dios de la
+                        medicina.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed bg-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                        id="botones">
+                        Especializaciones médicas mejor pagadas
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Los salarios varían dependiendo de los estados y las ciudades, pero en donde se observó una
+                        mejor compensación fue en Charlotte, Carolina del Norte ($462,760), St. Louis ($452,219) y
+                        Buffalo, Nueva York ($426,440), estas ciudades se mantienen en sus posiciones si además se tiene
+                        en cuenta el costo de vida, lo que indica un factor muy positivo.
+
+                        Las ciudades con compensación más baja, teniendo en cuenta también el costo de vida son San
+                        Francisco, Washington, DC y Baltimore.
+                        <br>
+                        A continuacion una lista de las especializaciones mejores pagadas en los Estados Unidos:
+                        <hr>
+                        <br>
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item">Neurocirugía – $773,201</li>
+                            <li class="list-group-item">Cirugía torácica – $684,663 </li>
+                            <li class="list-group-item">Cirugía ortopédica – $633,620</li>
+                            <li class="list-group-item">Cirugía plástica – $556,698</li>
+                            <li class="list-group-item"> Cirugía vascular – $552,313 </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Termina el acordeon -->
+    </div>
+
+    <!-- Empieza el footer-->
+    <footer class="text-center text-lg-start bg-primary mt-5">
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="http://127.0.0.1:5500/index.html">EPS conTuSalud</a>
+        </div>
+    </footer>
+    <!-- Termona el footer-->
+
+    <script>
+        var toastTrigger = document.getElementById('liveToastBtn')
+        var toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(toastLiveExample)
+                toast.show()
+            })
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/descarga.jfif">
+    <link rel="stylesheet" href="./css/afiliados.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+                }
+            });
+        });
+    </script>
+    <title>Empleados</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary mb-3">
+        <div class="container-fluid">
+            <img src="./img/descarga.jfif" alt="epicStore" id="logo">
+            <a class="navbar-brand" href="paginaInicio.html">EPS conTuSalud</a>
+            <a class="navbar-brand" href="afiliados.html">Afiliados</a>
+            <a class="navbar-brand" href="empleados.html">Empleados</a>
+            <a class="navbar-brand" href="independiente.html">Independientes</a>
+        </div>
+    </nav>
+    <!-- Termina el navbar -->
+    <div class="container">
+        <div class="container mt-5 mb-3" id="body">
+            <form id="formulario">
+                <div class="container row">
+                    <h5>Registrar citas</h5>
+                    <div class="col-2 mt-3">
+                        <label for="tId" class="form-label">Tipo de identificacion</label>
+                    </div>
+                    <div class="col-4 mt-3">
+                        <select class="form-select" id="tId" required>
+                            <option selected disabled value="">Seleccion</option>
+                            <option>CEDULA DE CIUDADANIA</option>
+                            <option>CEDULA DE EXTRANJERIA</option>
+                            <option>TARJETA DE IDENTIDAD</option>
+                            <option>REGISTRO CIVIL</option>
+                            <option>OTROS</option>
+                        </select>
+                    </div>
+                    <div class="col-2 mt-3">
+                        <label for="nId">Numero:</label>
+                    </div>
+                    <div class="col-4 mt-3">
+                        <input type="number" name="" id="nId" required class="form-control">
+                    </div>
+
+
+                    <div class="col-2 mt-3">
+                        <label for="empresa">Empresa:</label>
+                    </div>
+
+                    <div class="col-4 mt-3">
+                        <input type="text" name="" id="empresa" required class="form-control">
+                    </div>
+                    <div class="col-2 mt-3">
+                        <label for="ciudad">Ciudad:</label>
+                    </div>
+
+                    <div class="col-4 mt-3">
+                        <select class="form-select" id="ciudad" required>
+                            <option selected disabled value="">Seleccion</option>
+                            <option>Barranquilla</option>
+                            <option>Medellin</option>
+                            <option>Cali</option>
+                            <option>Bogota</option>
+                            <option>Cartagena</option>
+                        </select>
+                    </div>
+                    <div class="col-2 mt-3">
+                        <label for="direccion">Direccion:</label>
+                    </div>
+
+                    <div class="col-4 mt-3">
+                        <input type="text" name="" id="direccion" required class="form-control">
+                    </div>
+                    <div class="col-2 mt-3">
+                        <label for="correo">Correo:</label>
+                    </div>
+
+                    <div class="col-4 mt-3">
+                        <input type="email" name="" id="correo" required class="form-control">
+                    </div>
+                    <div class="col-2 mt-3">
+                        <label for="codigoPostal">Codigo postal:</label>
+                    </div>
+
+                    <div class="col-4 mt-3">
+                        <input type="number" name="" id="codigoPostal" required class="form-control">
+                    </div>
+                    <div class="col-2 mt-3">
+                        <label for="regimen">Regimen:</label>
+                    </div>
+
+                    <div class="col-4 mt-3">
+                        <select class="form-select" id="regimen" required>
+                            <option selected disabled value="">Seleccion</option>
+                            <option>Responsable de iva</option>
+                            <option>Persona natural responsable de iva</option>
+                            <option>Regimen especial</option>
+                            <option>Persona no natural responsable de iva</option>
+                        </select>
+                    </div>
+                    <div class="form-check mt-3 ms-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Estoy de acuerdo
+                        </label>
+                    </div>
+
+                    <div class="mb-3 ">
+                        <input type="submit" class="form-control bt btn-primary" value="Registrar">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+    <table id="example" class="table table-striped" style="color:black">
+        <thead class="bg-primary">
+            <tr>
+                <th scope="col">Identificacion</th>
+                <th scope="col">Numero id</th>
+                <th scope="col">Empresa</th>
+                <th scope="col">Ciudad</th>
+                <th scope="col">Direccion</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Codigo postal</th>
+                <th scope="col">Regimen</th>
+                <th scope="col">Opciones</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/empleados.js"></script>
+    <!-- Empieza el footer-->
+    <footer class="text-center text-lg-start bg-primary mt-5">
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="http://127.0.0.1:5500/index.html">EPS conTuSalud</a>
+        </div>
+    </footer>
+    <!-- Termona el footer-->
+</body>
+
+</html>
